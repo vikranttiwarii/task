@@ -1,0 +1,21 @@
+<div style="text-align: right; padding-right: 20px; padding-top: 20px;">
+    <button mat-raised-button color="accent" routerLink="/signup">Register</button>
+</div>
+
+<div style="width: 500px; margin: auto; padding-top: 100px;">
+    <mat-card>
+        <div style="padding: 20px;">
+            <form class="formContainer" [formGroup]="loginform" (ngSubmit)="login()">
+                <mat-form-field class="example-full-width" appearance="fill" style="width: 100%;">
+                    <mat-label>Email</mat-label>
+                    <input type="email" matInput formControlName="email" required>
+                </mat-form-field>
+                <mat-form-field class="example-full-width" appearance="fill" style="width: 100%;">
+                    <mat-label>Password</mat-label>
+                    <input type="password" matInput formControlName="password" required>
+                </mat-form-field>
+                <div style="text-align: center;"><button mat-raised-button color="primary" >Login</button></div>
+            </form>
+        </div>
+    </mat-card>
+</div>
